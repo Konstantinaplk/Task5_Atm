@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 @Data
 
@@ -18,5 +19,13 @@ public class Accounts {
 
     public void addAccount(Account a){
         accounts.add(a);
+    }
+
+    public Account searchById(int id){
+        return accounts.stream()
+                .filter(account -> account.getId()==id)
+                .findFirst()
+                .get()
+                ;
     }
 }

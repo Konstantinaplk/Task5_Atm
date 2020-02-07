@@ -14,6 +14,4 @@ import java.util.List;
 public class Bank {
     private Atm atm;
     private Accounts accounts;
-
-
 }

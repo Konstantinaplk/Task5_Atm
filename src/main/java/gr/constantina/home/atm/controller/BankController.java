@@ -14,7 +14,7 @@ import java.io.FileNotFoundException;
 
 public class BankController {
 
-    @GetMapping("start")
+    @GetMapping("/start")
     public Accounts accountsController() throws FileNotFoundException {
         AccountsReader accountsReader = new AccountsReader();
         return accountsReader.readAccounts("accounts.csv");

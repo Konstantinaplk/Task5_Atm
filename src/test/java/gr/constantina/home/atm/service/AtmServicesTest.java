@@ -1,4 +1,4 @@
-package gr.constantina.home.atm.model;
+package gr.constantina.home.atm.service;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,9 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AtmTest {
-    private Atm atm;
-
+class AtmServicesTest {
 
     @BeforeEach
     void setUp() {
@@ -20,6 +18,10 @@ class AtmTest {
 
     @Test
     void insert() {
+    }
+
+    @Test
+    void findRelevantAccount() {
     }
 
     @Test
@@ -40,21 +42,5 @@ class AtmTest {
 
     @Test
     void ejectCard() {
-    }
-
-    @Test
-    void getLocation() {
-    }
-
-    @Test
-    void getAccount() {
-    }
-
-    @Test
-    void setLocation() {
-    }
-
-    @Test
-    void setAccount() {
     }
 }

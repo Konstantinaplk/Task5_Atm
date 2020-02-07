@@ -17,14 +17,16 @@ public class AccountsReader {
             String line = scanner.nextLine();
             String [] words = line.split(",");
             Account account = new Account();
-            account.setNumber(words[0].trim());
-            account.setHolder(words[1].trim());
-            account.setBalance(Double.parseDouble(words[2].trim()));
-            account.setPin(Integer.parseInt(words[3].trim()));
+            account.setId(Integer.parseInt(words[0].trim()));
+            account.setNumber(words[1].trim());
+            account.setHolder(words[2].trim());
+            account.setBalance(Double.parseDouble(words[3].trim()));
+            account.setPin(Integer.parseInt(words[4].trim()));
             accounts.addAccount(account);
         }
         scanner.close();
+        System.out.println("accounts");
+        System.out.println(accounts);
         return accounts;
-
     }
 }
